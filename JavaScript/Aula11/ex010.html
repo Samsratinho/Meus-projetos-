@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+body{
+    background-color: black;
+    color: white;
+    font: normal 18px arial;
+}
+input{
+    width: 60px;
+}
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h  
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular(){
+            var txtv = document.getElementById('txtvel')
+            var res = document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}KM/h</strong></p>` 
+            if(vel >= 80){
+                res.innerHTML += `<p/>Você está <strong>MULTADO</strong> por exesso de velocidade!`
+            } else if (vel < 80 && vel >= 60){
+                res.innerHTML += `<p/>Você está rapido demais! <strong>CUIDADO</strong> `
+            } else if (vel <= 60 && vel >= 40){
+                res.innerHTML += `<p/>Você está na velocidade certa!`
+            } else if (vel <= 40 && vel >= 20){
+                res.innerHTML += `<p/>Ta lento! pode acelerar mais um pouco!`
+            } else if (vel <= 20 && vel >= 0){
+                res.innerHTML += `<p/>Ninguem merece uma lentidão dessa <strong>CUIDA MOFI!!!</strong>`
+            } 
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>

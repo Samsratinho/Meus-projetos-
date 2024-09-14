@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Nacionalidade</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    Seu país:<input type="text" name="txtnacio" id="txtnacio"> 
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div> <!-- Local onde vai  sair a resposta -->
+
+    <script>
+        function verificar(){
+        var local = document.getElementById('txtnacio') //Seletor de texto 
+        var res = document.querySelector('div#res') 
+        var pais = local.value // juntar a função com o botão
+        res.innerHTML = `<p>Vivendo em ${pais}</p>` 
+            if(pais == 'Brasil'){
+            res.innerHTML += `Você é Brasileiro, Patria amada Brasil!!!`
+        } else {
+            res.innerHTML += `Você é Estrangeiro, bem vindo ao nosso pais!!!`
+        }
+    }
+    </script>
+    
+</body>
+</html>
+
+<!--
+var país = 'Brasil'
+console.log(`Vivendo em ${país}`)
+if(país != 'Brasil'){
+    console.log('Você é Estrangeiro!')
+} else{
+    console.log('Você é Brasileiro!')
+}
+ -->

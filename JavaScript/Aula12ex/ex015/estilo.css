@@ -1,0 +1,26 @@
+body{
+    background: rgba(5, 27, 151, 0.855);
+    font: normal 15pt arial;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.551); /* sobra do titulo */
+}
+
+header{
+    color: white;
+    text-align: center; /* alinhar no centro o texto */
+}
+
+section{
+    background: white;
+    border-radius: 10px; /* deixar curvado as bordas */
+    padding: 15px; 
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.416); /* sombra da caixa */
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.504);
+}
