@@ -1,0 +1,80 @@
+body{
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+header{
+font: normal 15px Courier New ;
+text-align: center;
+}
+
+section{
+font: normal 20px Courier New ;
+background: #1e1e1e;
+border: 2px solid #61dafb;
+border-radius: 10px;
+display: inline-block;
+padding: 20px;
+width: 500px;
+margin: auto;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.416);
+}
+
+input[type="number"]{
+background-color: white;
+border: none;
+color: black;
+padding: 8px 12px;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 12px;
+
+}
+
+input[type="button"] {
+background-color: #ffffff; /* Cor de fundo */
+border: none; /* Sem bordas */
+color: rgb(0, 0, 0); /* Cor do texto */
+padding: 15px 32px; /* Espaçamento interno */
+text-align: center; /* Centraliza o texto */
+text-decoration: none; /* Remove sublinhado */
+display: inline-block;
+font-size: 16px; /* Tamanho da fonte */
+margin: 4px 2px; /* Margens */
+cursor: pointer; /* Muda o cursor ao passar */
+border-radius: 12px; /* Bordas arredondadas */
+transition-duration: 0.4s; /* Suaviza a transição */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+input[type="button"]:hover {
+background-color: #c3c1c1; /* Cor de fundo ao hover */
+box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+select {
+    width: 70%; /* largura */
+    padding: 10px; /* distancia das bordas */
+    font-size: 16px; /* altura */
+    color: #000000; /* cor texto */
+    font: normal 18px Courier New;
+    background-color: #f0f0f0;
+    border: 2px solid #61dafb; /* cor da borda */
+    border-radius: 7px; /* curvatura da borda */
+    appearance: none; /* Remove a aparência padrão */
+    cursor: pointer; /* muda o cursor */
+    text-align: center;
+}
+
+footer{
+color: white;
+text-align: center;
+font-style: italic;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.504);
+}
